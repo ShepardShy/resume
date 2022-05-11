@@ -1,0 +1,88 @@
+/* -------------------- Services -------------------- */
+
+.services {
+    padding: 20px;
+}
+
+
+.services__subtitle {
+    position: relative;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: var(--color-red);
+}
+
+.services__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.services__item {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px 0px;
+}
+
+.services__item:hover {
+    transition: all 0.1s;
+    box-shadow: 0px 2px 4px 4px rgb(0 0 0 / 25%);
+}
+
+
+.services__image {
+    margin: 0px 5px;
+    height: 200px;
+}
+
+.services__image img {
+    object-fit: contain;
+}
+
+.services__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 5px;
+}
+
+.price {
+    font-size: 20px;
+}
+.price::before {
+    content: "от";
+    font-size: 16px;
+}
+.price::after {
+    content: "Руб.";
+    font-size: 16px;
+}
+.services__button {
+    padding: 10px 15px;
+    border-radius: 4px;
+    border: 2px solid var(--color-red);
+    color: var(--color-red);
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #fff;
+    transition: all 0.2s;
+}
+
+.services__button:hover {
+    background-color: var(--color-red);
+    color: #fff;
+}
+
+/* -------------------- Media -------------------- */
+
+@media (max-width:1080px) {
+    .services__list {
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
+
+@media (max-width:780px) {
+    .services__list {
+        grid-template-columns: 1fr
+    }
+}

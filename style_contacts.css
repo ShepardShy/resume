@@ -1,0 +1,23 @@
+.contacts {
+    padding: 20px;
+}
+.contacts__list {
+    margin-bottom: 20px;
+}
+
+.contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+a.contacts__text {
+    color: var(--color-red)
+}
+
+a.contacts__text:hover{
+    text-decoration: underline;
+}
+
+.contacts__map {
+    border: 2px solid var(--color-red);
+    border-radius: 4px;
+}
