@@ -1,0 +1,311 @@
+/*Обнуление*/
+*,
+b::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    font-size: 16px;
+    color: #000;
+    font-family: Montserrat;
+    background-color: #333;
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+/*Класс для того, чтобы не было скролла по иксу */
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    /*Пишется max-width*/
+    max-width: 1280px;
+    margin: 0 auto;
+    /*Избегание прилипания к краю*/
+    padding: 0 15px;
+    box-sizing: content-box;
+}
+
+/*фоновое изображение*/
+.ibg {
+    position: relative;
+}
+
+.ibg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ---------- header ---------- */
+
+header {
+    background-color: rgb(39, 39, 39);
+    position: fixed;
+    width: 100%;
+    z-index: 15;
+}
+
+.navigation {
+    display: flex;
+    padding: 20px 0px;
+}
+
+.navigation>*:not(:last-child) {
+    margin-right: 20px;
+}
+
+.navigation__item:hover {
+    color: rgb(0, 255, 128);;
+    cursor: pointer;
+}
+
+/* ---------- section ---------- */
+
+.section__title {
+    font-size: 22px;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+/* ---------- columns ---------- */
+
+.column_white {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 20px 15px;
+}
+
+.section__columns {
+    display: flex;
+    justify-content: space-around;
+}
+
+.section__columns > *:not(:last-child) {
+    margin-right: 20px;
+}
+
+.column__header {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.column__list > *:not(:last-child) {
+    margin-bottom: 5px;
+}
+.column__item{
+    display: flex;
+    align-items: center;
+}
+
+.column__icon {
+    display: flex;
+    margin-right: 5px;
+}
+
+.column__attention {
+    color: #000;
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* ---------- section "Resume" ---------- */
+
+.resume {
+    margin-top: 70px;
+}
+
+.user {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 1fr;
+}
+
+.user_ibg {
+    width: 200px;
+    height: 200px;
+}
+
+.user_ibg img {
+    background: linear-gradient(to right, red, purple);
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.user__info {
+    margin-left: 20px;
+}
+
+.user-info__list > *:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.user-info__item {
+    display: flex;
+}
+
+.user-info__item > *:not(:last-child) {
+    margin-right: 10px;
+}
+
+.user-info__title {
+    color: rgb(0, 255, 128);
+}
+
+
+
+/* ---------- section "Skills" ---------- */
+
+.skills__header {
+    color: rgb(0, 255, 128);
+}
+
+/* ---------- section "Benefit" ---------- */
+
+.benefit .column__list > *:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.benefit .column {
+    width: 400px;
+}
+
+.benefit__header {
+    color: #000;
+    text-align: center;
+    font-weight: 500;
+}
+
+.benefit__title {
+    color: #000;
+}
+
+.examples {
+    margin-bottom: 20px;
+}
+
+.examples__body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px
+}
+.examples__item {
+    position: relative;
+    background: linear-gradient(to right, rgb(2, 221, 2), rgb(0, 204, 102));
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.examples__item:hover {
+    transform: scale(1.04);
+    transition: all 0.5s;
+}
+
+.examples__item.ibg {
+    height: 300px;
+}
+
+.examples__img{
+    padding: 5px;
+}
+
+.examples__item figcaption {
+    z-index: 10;
+}
+
+.examples__title {
+    background-color: rgb(25, 25, 25);
+    padding: 15px 20px;
+    margin: 0px 5px 5px 5px;
+}
+
+.examples__link_disabled {
+    cursor: default;
+}
+
+.examples___info {
+    display: none;
+}
+
+.examples__item:hover .examples___info {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #333;
+    padding: 20px;
+    margin: 5px;
+    width: 250px;
+    animation: show_tools 0.2s ease-in;
+    animation-fill-mode: forwards;
+    height: 90%;
+    z-index: -1;
+}
+
+.examples__subtitle {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tools > *:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.tools__item {
+    display: flex;
+    align-items: center;
+}
+
+.tools__icon {
+    margin-right: 8px;
+}
+
+
+@keyframes show_tools {
+    0% {
+        right: -250px;
+    }
+    100% {
+        right: 0px;
+    }
+}
