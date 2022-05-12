@@ -231,6 +231,10 @@ header {
     justify-content: flex-end;
 }
 
+.examples__item {
+    overflow: hidden;
+}
+
 .examples__item:hover {
     transform: scale(1.04);
     transition: all 0.5s;
