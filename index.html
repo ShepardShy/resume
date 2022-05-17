@@ -17,14 +17,14 @@
         <header>
             <div class="container">
                 <nav class="navigation">
-                    <li class="navigation__item">Резюме</li>
-                    <li class="navigation__item">Навыки</li>
-                    <li class="navigation__item">Что если?</li>
-                    <li class="navigation__item">Примеры работ</li>
+                    <a href="#resume" class="navigation__item">Резюме</a>
+                    <a href="#skills" class="navigation__item">Навыки</a>
+                    <a href="#benefit" class="navigation__item">Что если?</a>
+                    <a href="#examples" class="navigation__item">Примеры работ</a>
                 </nav>
             </div>
         </header>
-        <section class="resume">
+        <section id="resume">
             <div class="container">
                 <h1 class="section__title"> Резюме </h1>
                 <div class="user">
@@ -59,7 +59,7 @@
 
             </div>
         </section>
-        <section class="skills">
+        <section id="skills">
             <div class="container">
                 <h2 class="section__title"> Что я умею </h2>
                 <div class="section__columns">
@@ -211,7 +211,7 @@
                 </div>
             </div>
         </section>
-        <section class="benefit">
+        <section id="benefit">
             <div class="container">
                 <h2 class="section__title"> Рубрика "Что если?" </h2>
                 <div class="section__columns">
@@ -384,15 +384,15 @@
                 </div>
             </div>
         </section>
-        <section class="examples">
+        <section id="examples">
             <div class="container">
                 <h2 class="section__title"> Примеры работ </h2>
                 <div class="examples__body">
                     <a href="https://a--2.ru/services/design/logo" target="_blank" class="examples__link">
                         <figure class="examples__item ibg">
-                            <img src="./img/examples/a__2.jpg" alt="Лендинг для сайта А Квадрат" class="examples__img">
+                            <img src="./img/examples/a__2.jpg" alt="Лендинг для сайта 'А Квадрат'" class="examples__img">
                             <figcaption>
-                                <div class="examples__title">Лендинг для сайта А Квадрат</div>
+                                <div class="examples__title">Лендинг для сайта "А Квадрат"</div>
                                 <div class="examples___info">
                                     <div class="examples__subtitle"> Инструменты </div>
                                     <ul class="examples__list tools">
@@ -508,7 +508,7 @@
                         <figure class="examples__item ibg">
                             <img src="./img/examples/modnica.jpg" alt="Внешняя часть сайта Модница" class="examples__img">
                             <figcaption>
-                                <div class="examples__title">Внешняя часть сайта Модница</div>
+                                <div class="examples__title">Внешняя часть сайта "Модница"</div>
                                 <div class="examples___info">
                                     <div class="examples__subtitle"> Инструменты </div>
                                     <ul class="examples__list tools">
@@ -673,7 +673,7 @@
                             </figcaption>
                         </figure>
                     </a>
-                    <a href="https://moose.xn--c1adc0b2cd.xn--p1ai/customers" target="_blank" class="examples__link">
+                    <a href="" target="_blank" class="examples__link examples__link_disabled" onclick="event.preventDefault()">
                         <figure class="examples__item ibg">
                             <img src="./img/examples/wscript.jpg" alt="Веб-приложениe для проведения опросов по телефону" class="examples__img">
                             <figcaption>
@@ -752,6 +752,8 @@
                 d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z" />
         </symbol>
     </svg>
+
+<script src="js/script.js"></script>
 
 </body>
 
